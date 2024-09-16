@@ -1,0 +1,191 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ececec;
+}
+
+.header h3 {
+    margin: 0;
+    color: #5c6bc0;
+}
+
+.left-header {
+    color: #8d6e63;
+}
+
+.right-header {
+    text-align: right;
+}
+
+
+
+.table-container {
+    margin-bottom: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ececec;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.tabla th {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+.ajaxTitle th {
+    background-color: #ffccbc;
+    color: #d84315;
+}
+
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.totals-right {
+    text-align: right;
+}
+
+.totals-right div {
+    margin-bottom: 10px;
+}
+
+.totals-right label {
+    color: #6a1b9a;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-field {
+    padding: 8px;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background-color: #f3e5f5;
+    width: 150px;
+    color: #333;
+}
+
+.btn-teal, .btn-blue {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-teal {
+    background-color: #4db6ac;
+}
+
+.btn-teal:hover {
+    background-color: #00897b;
+}
+
+.btn-blue {
+    background-color: #64b5f6;
+}
+
+.btn-blue:hover {
+    background-color: #1976d2;
+}
+
+
+.product-client {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product, .client {
+    width: 48%;
+}
+
+fieldset {
+    border: 2px solid #ececec;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    color: #5c6bc0;
+    font-size: 1.2em;
+}
+
+.product div, .client div {
+    margin-bottom: 15px;
+}
+
+.product label, .client label {
+    color: #8e24aa;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.product input[type="text"], .client input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background-color: #fff8e1;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .product-client {
+        flex-direction: column;
+    }
+
+    .product, .client {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .totals {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .totals-right {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
